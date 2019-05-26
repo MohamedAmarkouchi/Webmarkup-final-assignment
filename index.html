@@ -12,52 +12,81 @@
 		<meta name = "viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- CSS reference -->
-		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
 		
 		<!-- favicons -->
-		<link rel="apple-touch-icon" sizes="57x57" href="/img/fav/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/img/fav/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/img/fav/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/img/fav/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/img/fav/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/img/fav/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/img/fav/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/img/fav/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/img/fav/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/img/fav/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/img/fav/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/img/fav/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/img/fav/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="img/fav/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="img/fav/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
 		
 	</head>
 
-	<body>
-		<h1> Amsterdam </h1>
-		<h2> Valiant, Steadfast, Compassionate </h2>
-		<nav>
+	<body id="TitleBody">
+		<!-- cookies with no milk :) -->
+		<p id="cookies">
+		this site uses cookies
+		</p>
+		
+		<!-- background video -->
+		<video id="bgVideo" loop autoplay muted>
+			<source src="vid/Amsterdam.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	
+		<!-- subject 1 -->
+		<header id="subject1Title">
+			<h1> Amsterdam </h1>
+			<h2> Valiant, Steadfast, Compassionate </h2>
+		</header>	
+		
+		<!-- navigation -->
+		<nav id="navigation">
+		
+		<label for="hamburgerMenu" class="toggle-menu">
 			<ul>
-				<li> menu (tag reffering to index structure 3)</li>
-				<li> menu (tag reffering to index structure 4)</li>
-				<li> menu (tag reffering to index structure 5)</li>
-				<li> menu (tag reffering to index structure 7)</li>
+				<li> </li>
+				<li> </li>
+				<li> </li>
+			</ul>
+		</label>
+		<input type="checkbox" id="hamburgerMenu">
+		
+			<ul id="MenuNav">
+				<li> <a class="subjectNav" href="#about"> About Amsterdam </a> </li>
+				<li> <a class="subjectNav" href="#subject2Title"> Bos &amp; Lommer </a> </li>
+				<li> <a class="subjectNav" href="#sportTitle"> Sport </a> </li>
+				<li> <a class="subjectNav" href="#contactTitle"> Contact </a> </li>
 			</ul>
 		</nav>
+		
 		<main>
-			<section>
-				<header> 
+			<section id="mainSection">
+				<header id="about"> 
 					<h2> About Amsterdam </h2>
 				</header>
-				<article>
+				<article id="mainArticle">
 					<p>
-						Amsterdam is famous for it's canals and it's architecture.
+						Amsterdam is famous for its canals and it's architecture.
 						there are about 9000 houses which were built in the 16th - 18th century that are still
 						standing as of now.
+							<aside id="grachtAside">
+								<img src="img/amsterdamse gracht.png" alt="gracht in Amsterdam">
+							</aside>
 						Amsterdam also has a lot of museums which you can visit. 
 						There is a total of 51 museums of which Het Rijksmuseum, the Van Gogh museum and
 						the Anne Frank huis the most popular are.
-							<aside>
-								<img src="img/amsterdamse gracht.jpg" alt="gracht in Amsterdam" height="300" width="600">
-								<img src="img/amsterdam rijksmuseum.jpg" alt="rijksmuseum front side view" height="300" width="600">
+							<aside id="museumAside">
+								<img src="img/amsterdam rijksmuseum.png" alt="rijksmuseum front side view">
 							</aside>
 						Amsterdam also has the largest dance festival in the world: 'Amsterdam Dance Event (ADE)'
 						attracting around 350.000 people from all over the world.
@@ -74,26 +103,26 @@
 		</main>
 		
 		
-		<section>
-			<header>
-				<h2> Bos & lommer </h2>
+		<section id="secondarySection">
+			<header id="subject2Title">
+				<h2> Bos &amp; lommer </h2>
 			</header>
 			<article>
 				<p>
-				Bos & Lommer was considered a problematic neighbourhood, so the municipality invested more money and paid more attention towards Bos & Lommer to take care if her current situation.
+				Bos &amp; Lommer was considered a problematic neighbourhood, so the municipality invested more money and paid more attention towards Bos & Lommer to take care if her current situation.
 				within a few years Bos & lommer became a beautiful place with various activities to do.
 				
 				For instance you can visit the Candy Castle, known as the former st. Josephkerk, together with your children, cousins or friends
 				to have some fun and playtime together with other children visiting the place aswell. For an &euro;8,- fee, you can enter the place for the whole day. And if you pay them a visit on Monday, Tuesday or Thursday
 				after 4PM, this fee is reduced to &euro;5,50.
 				<aside>
-					<img src="img/candycastle.jpg" alt="Candy Castle,formerly known as st. Josephchurch" height="300" width="600">
+					<img src="img/candycastle.png" alt="Candy Castle,formerly known as st. Josephchurch">
 				</aside>
 				Are you more a lover of nature?
 				If you want, you can also pay a visit to the beautiful Erasmuspark located at the Jan van Galenstraat. The parc is patrolled during the whole day and is secured with doors which are locked during the nightime.
 				this is done so it can be a safe and clean place to go to and enjoy the visit. You can go play some sports there or just have a picknick. all your decision for your visting purpose.
 				<aside>
-					<img src="img/erasmuspark.jpg" alt="Entrance of the Erasmuspark" height="300" width="600">
+					<img src="img/erasmuspark.png" alt="Entrance of the Erasmuspark">
 				</aside>
 				Ofcourse if you like to go shopping, there is also 'Bos en Lommerplein Markt'. It is a big square with a huge variety of market stalls. The atmospheric is very nice there and the people are all kind to eachother.
 				Bos en Lommer is a very multicultural neighbourhood, so blending in with all the people won't be really difficult.
@@ -106,8 +135,8 @@
 			<footer>&copy; Mo Amarkouchi | 642181 </footer>
 		</section>
 		
-		<section>
-			<header>
+		<section id="sportSection">
+			<header id="sportTitle">
 				<h2> Sport </h2>
 			</header>
 			<article>
@@ -116,7 +145,7 @@
 				During the winters you go ice skating on the Jaap Eden baan and during the summer you are going to switch to cycling and regular skating.
 					<aside>
 						<a href=https://www.skits.nl/>
-							<img src="img/iceskating.jpg" alt="man fixing his skates while other man in background passes him at a high speed" height="300" width="600">
+							<img src="img/iceskating.png" alt="man fixing his skates while other man in background passes him at a high speed">
 						</a>
 					</aside>
 				</p>
@@ -126,7 +155,7 @@
 				Even if you do not like tennis that much, they organise activities like going on wintersport with a 100 members.
 					<aside>
 						<a href=https://www.chipencharge.nl/>
-							<img src="img/tennis.jpg" alt="2 tennis racquets lying on the grass with 3 tennisballs on them" height="300" width="600">
+							<img src="img/tennis.png" alt="2 tennis racquets lying on the grass with 3 tennisballs on them">
 						</a>
 					</aside>
 				</p>
@@ -136,7 +165,7 @@
 				competing against all 10 other swimming association for the top title and enjoying the night after the matches together.
 					<aside>
 						<a href=https://www.aszvspons.nl/>
-							<img src="img/swimming.jpg" alt="2 swimmers competing against eachother" height="300" width="600">
+							<img src="img/swimming.png" alt="2 swimmers competing against eachother">
 						</a>
 					</aside>
 				</p>
@@ -146,7 +175,7 @@
 				So if you like fun sports like Windsurfing, Kitesurfing, snowboarding etc. this is the club for you.
 					<aside>
 						<a href=https://derm.nl/>
-							<img src="img/windsurfing.jpg" alt="6 people windsurfing at sea" height="300" width="600">
+							<img src="img/windsurfing.png" alt="6 people windsurfing at sea">
 						</a>
 					</aside>
 				</p>
@@ -156,7 +185,7 @@
 				With 4 male and 8 female competition teams you are guaranteed an amazing volleyball season.
 					<aside>
 						<a href=https://www.svuvolleybal.nl/>
-							<img src="img/volleyball.jpg" alt="volleyball touching the net at its top" height="300" width="600">
+							<img src="img/volleyball.png" alt="volleyball touching the net at its top">
 						</a>
 					</aside>
 				</p>
@@ -166,7 +195,7 @@
 				They also offer a weekly introduction training softball for women without experience.
 					<aside>
 						<a href=https://www.quickamsterdam.nl/>
-							<img src="img/baseball.jpg" alt="the catcher and runner getting ready for the ball" height="300" width="600">
+							<img src="img/baseball.png" alt="the catcher and runner getting ready for the ball">
 						</a>
 					</aside>
 				</p>
@@ -176,7 +205,7 @@
 				They have several divisions for every skill level there is ranging from young to old.
 					<aside>
 						<a href=http://www.acc-cricket.nl/>
-							<img src="img/cricket.jpg" alt="4 people playing cricket on the field with 2 spectators" height="300" width="600">
+							<img src="img/cricket.png" alt="4 people playing cricket on the field with 2 spectators">
 						</a>
 					</aside>
 				</p>
@@ -186,7 +215,7 @@
 				growing at this club goes with much more ease since the skills of the 5 teams do overlap.
 					<aside>
 						<a href=http://ascrum.com/>
-							<img src="img/rugby.jpg" alt="guy with ball running followed by other players" height="300" width="600">
+							<img src="img/rugby.png" alt="guy with ball running followed by other players">
 						</a>
 					</aside>
 				</p>
@@ -196,7 +225,7 @@
 				They give a nine week introduction course for those who have never fenced before.
 					<aside>
 						<a href=https://www.assvesprit.nl/>
-							<img src="img/fencing.jpg" alt="1 person coming with a stabbing motion towards the opponent" height="300" width="600">
+							<img src="img/fencing.png" alt="1 person coming with a stabbing motion towards the opponent">
 						</a>
 					</aside>
 				</p>
@@ -206,7 +235,7 @@
 				They teach you how to take on bigger opponents with much more ease.
 					<aside>
 						<a href=http://www.bjj-purmerend.nl/braziliaans-jiu-jitsu/>
-							<img src="img/jiujitsu.jpg" alt="brazilian jiu jitsu 2 man sparring on the floor" height="300" width="600">
+							<img src="img/jiujitsu.png" alt="brazilian jiu jitsu 2 man sparring on the floor">
 						</a>
 					</aside>
 				</p>
@@ -214,15 +243,15 @@
 			<footer>&copy; Mo Amarkouchi | 642181 </footer>
 		</section>
 		
-		<section>
-			<header>
+		<section id="referenceSection">
+			<header id="referenceTitle">
 				<h2> Brazilian Jiu Jitsu </h2>
 			</header>
 			<article>
 				<p>
 					<aside>
 						<a href=http://www.bjj-purmerend.nl/braziliaans-jiu-jitsu/>
-							<img src="img/bjj.png" alt="Logo of the brazilian jiu jitsu purmerend website" height="300" width="600">
+							<img src="img/bjj.png" alt="Logo of the brazilian jiu jitsu purmerend website">
 						</a>
 					</aside>
 				</p>
@@ -230,8 +259,8 @@
 			<footer>&copy; Mo Amarkouchi | 642181 </footer>
 		</section>
 		
-		<section>
-			<header>
+		<section id="contactSection">
+			<header id="contactTitle">
 				<h2> Contact </h2>
 			</header>
 			<form action="http://witan.nl/inholland/testform.php" method="post">
@@ -252,7 +281,7 @@
 						/>
 					</p>
 					<p>
-						Your E-mail adress is&ast;:
+						Your email is&ast;:
 						<input
 							type="email"
 							name="email"

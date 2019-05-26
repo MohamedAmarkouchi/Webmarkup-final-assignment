@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600|Roboto+Condensed|Roboto:500|Ubuntu&display=swap');
+@font-face
+{
+	font-family: 'Roboto', sans-serif;
+	src: url('/fonts/Roboto-Light.ttf') format('truetype');
+}
+
+h1
+{ 
+	font-family: 'Roboto', 'Ubuntu', 'Open Sans', 'Berlin Sans FB', sans-serif;
+	color: #000000;
+}
+
+h2
+{
+	font-family: 'Roboto', 'Roboto Condensed', arial, 'Open Sans', sans-serif;
+	color: #707070;
+}
+
+p, li, article, footer, legend, input, textarea, button	
+{
+	font-family: 'Roboto-Light', arial, 'Roboto', 'Open Sans', sans-serif;
+	color:#444444;
+}
